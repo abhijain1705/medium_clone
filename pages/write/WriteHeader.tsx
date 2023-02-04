@@ -50,7 +50,7 @@ const WriteHeader = () => {
                         fill="#000"
                     ></path>
                 </svg>
-                <img className={styles.HeaderUser} src={image} width={30} height={30} alt="user_image" />
+                <Image className={styles.HeaderUser} src={image} width={30} height={30} alt="user_image" />
             </div>
         </div>
     )

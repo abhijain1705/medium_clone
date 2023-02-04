@@ -3,6 +3,7 @@ import { UseScrollContext } from "../../state/AppContext";
 import { MoreFromMedium } from '../../data/PostComponent';
 import { ProfileCompo } from "../../authAfterComponents/AfterRight";
 import { linksArray } from "../../data/Section";
+import Image from 'next/image';
 
 const BlogRight = () => {
 
@@ -31,7 +32,7 @@ const BlogRight = () => {
         <div className={styles.BlogRightWrapper}>
             <div className={styles.BlogUnlimitedButton}>Get unlimited access</div>
             <div className={styles.BlogProfileBox}>
-                <img
+                <Image
                     className={styles.BlogProfileImg}
                     src="https://miro.medium.com/fit/c/48/48/1*PmKEk3HdNVyjAx3eitRQRQ.png"
                     alt=""
@@ -79,7 +80,7 @@ const BlogRight = () => {
             <div className={styles.AddWrapper}>
                 {
                     MoreFromMedium.map((val, ind) => (
-                        <div>
+                        <div key={ind}>
                             <ProfileCompo
                                 name={val.head}
                                 para={val.para}
@@ -92,7 +93,7 @@ const BlogRight = () => {
             <div className={styles.blogArrayWrapper}>
                 {
                     linksArray.map((itm, ind) => (
-                        <div className={styles.links} key={ind}>{itm}</div>
+                        <div key={ind} className={styles.links}>{itm}</div>
                     ))
                 }
             </div>

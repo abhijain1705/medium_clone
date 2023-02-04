@@ -1,4 +1,5 @@
 import React from "react";
+import Image from 'next/image';
 
 const BlogSection = () => {
   const styles = {
@@ -22,7 +23,8 @@ const BlogSection = () => {
       <div className={styles.BlogSectionInnerWrapper}>
         <div className={styles.BlogSectionChild_1}>
           <div className={styles.BlogSectionChild_1InnerWrapper}>
-            <img
+            <Image
+            alt="medium-logo"
               className="w-[20px] h-[20px] rounded-full"
               src="https://miro.medium.com/fit/c/64/64/1*pKOfOAOvx-fWzfITATgGRg.jpeg"
             />
@@ -33,7 +35,7 @@ const BlogSection = () => {
 
         <div className={styles.BlogSectionChild_2}>
           <div className={styles.BlogSectionChild_2Profile}>
-            <img className="w-[30px] h-[30px] rounded-full" src="https://miro.medium.com/fit/c/48/48/1*PmKEk3HdNVyjAx3eitRQRQ.png" />
+            <Image alt='medium-logo' className="w-[30px] h-[30px] rounded-full" src="https://miro.medium.com/fit/c/48/48/1*PmKEk3HdNVyjAx3eitRQRQ.png" />
             <div className={styles.BlogSectionChild_2ProfileName}>
               <div className={styles.BlogSectionChild_2Name}>Mais Aleraki</div>
               <div className={styles.BlogSectionChild_2BlogSummary}>

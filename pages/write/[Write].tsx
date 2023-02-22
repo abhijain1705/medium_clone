@@ -14,7 +14,7 @@ const Write = () => {
     return (
         <ScrollContextProvider>
             <UserContextProvider>
-                <main className='overflow-x-hidden'>
+                <main className='overflow-x-hidden h-[100vh] w-[100vw]'>
                     <WriteHeader />
                     <WriterSection />
                 </main>

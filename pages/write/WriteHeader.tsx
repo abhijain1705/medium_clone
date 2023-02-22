@@ -15,6 +15,7 @@ const WriteHeader = () => {
     };
 
     const { image } = UseLoggedInImageContext();
+  
 
     return (
         <div className={styles.HeaderWrapper}>

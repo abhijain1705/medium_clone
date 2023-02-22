@@ -37,6 +37,7 @@ const AfterRight = () => {
             <div className={styles.AfterReviewText}>2022 in Review</div>
             {ReviewPeoples.map((val, ind) => (
                 <ProfileCompo
+                key={ind}
                     followPeople={false}
                     name={val.head}
                     para={val.para}
